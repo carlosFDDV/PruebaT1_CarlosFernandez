@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlRocket">
+   <children>
+      <AnchorPane prefHeight="141.0" prefWidth="800.0" styleClass="imagenFondo">
+         <children>
+            <JFXButton onAction="#cerrarVentana" style="-fx-background-color: red; -fx-background-radius: 200;" text="X" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+            <Pane layoutY="107.0" prefHeight="493.0" prefWidth="800.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0;">
+               <children>
+                  <VBox layoutY="7.0" prefHeight="493.0" prefWidth="800.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER" wrappingWidth="698.6708984375">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                        </Text>
+                        <ImageView fx:id="fotoPrincipal" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="300.0" top="10.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@../img/profilephoto.png" />
+                           </image>
+                        </ImageView>
+                        <JFXTextField focusColor="BLACK" promptText="username" styleClass="letraIn" unFocusColor="BLACK">
+                           <VBox.margin>
+                              <Insets left="300.0" right="300.0" top="10.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXTextField focusColor="BLACK" promptText="password" styleClass="letraIn" unFocusColor="BLACK">
+                           <VBox.margin>
+                              <Insets left="300.0" right="300.0" top="30.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXButton onAction="#openStage" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #ff9a1f; -fx-background-radius: 10;" styleClass="buttonHover" text="Let me in!" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="300.0" top="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Pane prefHeight="25.0" prefWidth="800.0" style="-fx-background-color: #ff9a1f;" AnchorPane.bottomAnchor="0.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Guest access..." AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+   <stylesheets>
+      <URL value="@../application/application.css" />
+      <URL value="@../application/application.css" />
+   </stylesheets>
+</AnchorPane>

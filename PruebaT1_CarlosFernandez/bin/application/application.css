@@ -1,0 +1,47 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+*{
+    -fx-font-family: 'Poiret One';
+}
+
+.imagenFondo{
+	-fx-background-image: url("../img/sky.jpeg");
+	-fx-background-size: 800 200;
+	-fx-background-position: center center;
+}
+
+.letraIn{
+	-fx-text-fill: #000000;
+}
+
+.imagenCerrarX{
+		-fx-background-image: url("../img/botonClose.png");
+	
+}
+
+.buttonHover :hover{
+	-fx-background-color: #000000;
+	-fx-text-fill:  #4059a9;
+}
+
+.imagen1{
+	-fx-background-image: url("../img/1.jpg");
+	-fx-background-position: center center;
+}
+
+.imagen2{
+	-fx-background-image: url("../img/2.jpg");
+	-fx-background-position: center center;
+}
+
+.imagen3{
+	-fx-background-image: url("../img/3.jpg");
+	-fx-background-position: center center;
+}
+
+.imagen4{
+	-fx-background-image: url("../img/sky.jpeg");
+	-fx-background-position: center center;
+	-fx-background-size: 800 600;
+	-fx-background-repeat: no-repeat;
+}
